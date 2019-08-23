@@ -24,12 +24,12 @@
                             @error="imgPlaceholder"
                         />
                     </div>
-                    <span class="contact-name" v-if="contact.name">{{
-                        contact.name
-                    }}</span>
-                    <span class="contact-company" v-if="contact.companyName">{{
-                        contact.companyName
-                    }}</span>
+                    <span class="contact-name" v-if="contact.name">
+                        {{ contact.name }}
+                    </span>
+                    <span class="contact-company" v-if="contact.companyName">
+                        {{ contact.companyName }}
+                    </span>
                 </div>
                 <hr />
                 <div class="column" v-if="contact.phone.home">
@@ -37,9 +37,9 @@
                         <div class="column">
                             <span class="section-title">Phone:</span>
                             <div class="row separated">
-                                <span class="contact-phone">{{
-                                    contact.phone.home | formatPhone
-                                }}</span>
+                                <span class="contact-phone">
+                                    {{ contact.phone.home | formatPhone }}
+                                </span>
                                 <span class="contact-phone-type">Home</span>
                             </div>
                         </div>
@@ -51,9 +51,9 @@
                         <div class="column">
                             <span class="section-title">Phone:</span>
                             <div class="row separated">
-                                <span class="contact-phone">{{
-                                    contact.phone.mobile | formatPhone
-                                }}</span>
+                                <span class="contact-phone">
+                                    {{ contact.phone.mobile | formatPhone }}
+                                </span>
                                 <span class="contact-phone-type">Mobile</span>
                             </div>
                         </div>
@@ -65,9 +65,9 @@
                         <div class="column">
                             <span class="section-title">Phone:</span>
                             <div class="row separated">
-                                <span class="contact-phone">{{
-                                    contact.phone.work | formatPhone
-                                }}</span>
+                                <span class="contact-phone">
+                                    {{ contact.phone.work | formatPhone }}
+                                </span>
                                 <span class="contact-phone-type">Work</span>
                             </div>
                         </div>
@@ -79,9 +79,8 @@
                     <div class="contact-address">
                         <span>{{ contact.address.street }}</span>
                         <span>
-                            {{ contact.address.city }},{{
-                                contact.address.state
-                            }}
+                            {{ contact.address.city }},
+                            {{ contact.address.state }}
                             {{ contact.address.zipCode }},
                             {{ contact.address.country }}
                         </span>
@@ -90,16 +89,16 @@
                 </div>
                 <div class="column birthdate" v-if="contact.birthdate">
                     <span class="section-title">Birthdate:</span>
-                    <span class="contact-birthday">{{
-                        contact.birthdate | formatDate
-                    }}</span>
+                    <span class="contact-birthday">
+                        {{ contact.birthdate | formatDate }}
+                    </span>
                     <hr />
                 </div>
                 <div class="column email" v-if="contact.emailAddress">
                     <span class="section-title">Email:</span>
-                    <span class="contact-email">{{
-                        contact.emailAddress
-                    }}</span>
+                    <span class="contact-email">
+                        {{ contact.emailAddress }}
+                    </span>
                     <hr />
                 </div>
             </div>
@@ -159,7 +158,7 @@ export default {
 <style lang="scss" scoped>
 .go-back {
     color: #489bd3;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
     margin-left: 14px;
     position: relative;

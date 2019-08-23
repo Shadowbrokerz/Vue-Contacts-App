@@ -20,9 +20,9 @@
                         />
                     </div>
                     <div class="contact-details">
-                        <span class="contact-name is-favourite">
-                            {{ contact.name }}
-                        </span>
+                        <span class="contact-name is-favourite">{{
+                            contact.name
+                        }}</span>
                         <span
                             class="contact-company"
                             v-if="contact.companyName"
@@ -51,9 +51,9 @@
                     </div>
                     <div class="contact-details">
                         <span class="contact-name">{{ contact.name }}</span>
-                        <span class="contact-company">
-                            {{ contact.companyName }}
-                        </span>
+                        <span class="contact-company">{{
+                            contact.companyName
+                        }}</span>
                     </div>
                 </div>
                 <hr />
@@ -105,7 +105,11 @@ export default {
             font-weight: bold;
         }
     }
-
+    .favourite-contacts {
+        .contact:last-child hr {
+            display: none;
+        }
+    }
     .contact-type {
         background: #f1f1f1;
         display: block;
