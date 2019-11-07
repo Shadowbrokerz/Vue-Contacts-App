@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         contacts: [],
-        jsonUrl: 'https://s3.amazonaws.com/technical-challenge/v3/contacts.json'
+        jsonUrl: 'https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/technical-challenge/v3/contacts.json'
     },
     mutations: {
         // Get the contacts and sort them alphabetically
