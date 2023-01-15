@@ -4,7 +4,7 @@ This is a really simple application made in VueJS where you have a list of conta
 You can make a contact favourite if you like, but it won't store the information.
 
 ## Project setup
-First of all, start by installing the dependencies...
+First of all, start by installing the dependencies!
 ```
 npm install
 ```
